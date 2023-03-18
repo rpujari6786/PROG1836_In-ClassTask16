@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .fav-team {
+                overflow-x: auto;
+            }
+
+            h2 {
+                text-align: center;
+                margin: 5vh 0;
+                font-size: 1.75em;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                box-shadow: 0 5px 10px black;
+            }
+
+            table tr {
+                padding: 0.5em;
+            }
+
+            thead tr {
+                background-color: #333;
+            }
+
+            thead th {
+                color: #f0f0f0;
+                font-size: 1.2em;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #eaeaea;
+            }
+
+            table th,
+            table td {
+                font-size: 1em;
+                padding: 1em;
+                text-align: center;
+            }
+
+            /* @media only screen and (min-width: 768px) and (max-width: 992px) { */
+            @media all and (min-width: 350px) and (max-width: 600px) {
+                h2 {
+                    margin: 4rem 0;
+                    font-size: 2.5rem;
+                    background-color: red;
+                }
+
+                table tr,
+                table td {
+                    display: block;
+                    padding: 0.5em;
+                    font-size: 1.25em;
+                }
+
+                td:nth-of-type(1)::before {
+                    content: "Player ";
+                }
+
+                td:nth-of-type(2)::before {
+                    content: "Position ";
+                }
+
+                td:nth-of-type(1)::before,
+                td:nth-of-type(2)::before {
+                    font-weight: bolder;
+                    float: left;
+                    position: relative;
+                    left: 20vw;
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                h2 {
+                    margin: 1em 0;
+                    font-size: 3em;
+                }
+
+                table thead tr {
+                    display: none;
+                }
+
+                table tr,
+                table td {
+                    display: block;
+                    padding: 0.25em;
+                    font-size: 1.35em;
+                }
+
+                td:nth-of-type(1)::before {
+                    content: "Player ";
+                }
+
+                td:nth-of-type(2)::before {
+                    content: "Position ";
+                }
+
+                td:nth-of-type(1)::before,
+                td:nth-of-type(2)::before {
+                    font-weight: bolder;
+                    float: left;
+                    position: relative;
+                    left: 10vw;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="fav-team">
+            <h2>Favourite team</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>Forward</td>
+                    </tr>
+                    <tr>
+                        <td>Louis Suarez</td>
+                        <td>Forward</td>
+                    </tr>
+                    <tr>
+                        <td>Phillipe Coutinho</td>
+
+                        <td>Midfielder</td>
+                    </tr>
+                    <tr>
+                        <td>Arthur Melo</td>
+
+                        <td>Midfielder</td>
+                    </tr>
+                    <tr>
+                        <td>Ter Stegen</td>
+
+                        <td>Goalkeeper</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Umtiti</td>
+
+                        <td>Defender</td>
+                    </tr>
+                    <tr>
+                        <td>Gerard Piquw</td>
+
+                        <td>Defender</td>
+                    </tr>
+                    <tr>
+                        <td>Sergio Busquets</td>
+
+                        <td>Midfielder</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>
